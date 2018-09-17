@@ -1,0 +1,1183 @@
+EESchema Schematic File Version 4
+LIBS:camera_trigger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L camera_trigger-rescue:Audio-Jack-3 J5
+U 1 1 5ABEB2B7
+P 9900 2600
+F 0 "J5" H 9850 2775 50  0000 C CNN
+F 1 "Audio-Jack-3" H 10000 2530 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 10150 2700 50  0001 C CNN
+F 3 "" H 10150 2700 50  0001 C CNN
+	1    9900 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L nodemcu:NodeMCU_Amica_R2 U2
+U 1 1 5ABEC34D
+P 4050 2950
+F 0 "U2" H 4050 3750 50  0000 C CNN
+F 1 "NodeMCU_Amica_R2" H 4050 2100 50  0000 C CNN
+F 2 "nodemcu:NodeMCU_Amica_R2" H 4300 2950 50  0001 C CNN
+F 3 "" H 4300 2950 50  0000 C CNN
+	1    4050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:Microphone_Crystal MK1
+U 1 1 5ABEC39E
+P 1350 6000
+F 0 "MK1" H 1200 6045 50  0000 R CNN
+F 1 "Mic" H 1200 5970 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" V 1400 5930 50  0001 L CNN
+F 3 "" V 1350 6100 50  0001 C CNN
+	1    1350 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:R R1
+U 1 1 5ABEC4A4
+P 1350 5300
+F 0 "R1" V 1430 5300 50  0000 C CNN
+F 1 "2.2k" V 1350 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1280 5300 50  0001 C CNN
+F 3 "" H 1350 5300 50  0001 C CNN
+	1    1350 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5ABEC5C5
+P 1350 6550
+F 0 "#PWR01" H 1350 6300 50  0001 C CNN
+F 1 "GND" H 1350 6400 50  0000 C CNN
+F 2 "" H 1350 6550 50  0001 C CNN
+F 3 "" H 1350 6550 50  0001 C CNN
+	1    1350 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:C C1
+U 1 1 5ABEC5E1
+P 2100 5800
+F 0 "C1" H 2125 5900 50  0000 L CNN
+F 1 "0.1uF" H 2125 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2138 5650 50  0001 C CNN
+F 3 "" H 2100 5800 50  0001 C CNN
+	1    2100 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L camera_trigger-rescue:R R6
+U 1 1 5ABEC634
+P 3300 6600
+F 0 "R6" V 3380 6600 50  0000 C CNN
+F 1 "100k" V 3300 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3230 6600 50  0001 C CNN
+F 3 "" H 3300 6600 50  0001 C CNN
+	1    3300 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L camera_trigger-rescue:R R4
+U 1 1 5ABEC673
+P 2450 6600
+F 0 "R4" V 2530 6600 50  0000 C CNN
+F 1 "100k" V 2450 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2380 6600 50  0001 C CNN
+F 3 "" H 2450 6600 50  0001 C CNN
+	1    2450 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:R R5
+U 1 1 5ABEC6C0
+P 2900 6900
+F 0 "R5" V 2980 6900 50  0000 C CNN
+F 1 "1k" V 2900 6900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2830 6900 50  0001 C CNN
+F 3 "" H 2900 6900 50  0001 C CNN
+	1    2900 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5ABEC78C
+P 2900 7250
+F 0 "#PWR02" H 2900 7000 50  0001 C CNN
+F 1 "GND" H 2900 7100 50  0000 C CNN
+F 2 "" H 2900 7250 50  0001 C CNN
+F 3 "" H 2900 7250 50  0001 C CNN
+	1    2900 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5800 1350 5450
+Wire Wire Line
+	1350 6200 1350 6550
+Wire Wire Line
+	1950 5800 1350 5800
+$Comp
+L camera_trigger-rescue:OPA340UA U1
+U 1 1 5ABFE3D5
+P 3350 5900
+F 0 "U1" H 3350 6150 50  0000 L CNN
+F 1 "OPA340UA" H 3350 6050 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3350 5900 50  0001 L CNN
+F 3 "" H 3500 6050 50  0001 C CNN
+	1    3350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5ABFE486
+P 3250 6250
+F 0 "#PWR03" H 3250 6000 50  0001 C CNN
+F 1 "GND" H 3250 6100 50  0000 C CNN
+F 2 "" H 3250 6250 50  0001 C CNN
+F 3 "" H 3250 6250 50  0001 C CNN
+	1    3250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5ABFE4CA
+P 3250 5000
+F 0 "#PWR04" H 3250 4850 50  0001 C CNN
+F 1 "+3.3V" H 3250 5140 50  0000 C CNN
+F 2 "" H 3250 5000 50  0001 C CNN
+F 3 "" H 3250 5000 50  0001 C CNN
+	1    3250 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5000 3250 5200
+$Comp
+L power:+3.3V #PWR05
+U 1 1 5ABFE502
+P 1350 4900
+F 0 "#PWR05" H 1350 4750 50  0001 C CNN
+F 1 "+3.3V" H 1350 5040 50  0000 C CNN
+F 2 "" H 1350 4900 50  0001 C CNN
+F 3 "" H 1350 4900 50  0001 C CNN
+	1    1350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4900 1350 5150
+Wire Wire Line
+	2250 5800 2450 5800
+Wire Wire Line
+	3250 6250 3250 6200
+Wire Wire Line
+	3650 5900 3950 5900
+Wire Wire Line
+	3950 5900 3950 6600
+Wire Wire Line
+	3950 6600 3450 6600
+Connection ~ 3950 5900
+Wire Wire Line
+	2900 6000 2900 6600
+Wire Wire Line
+	2900 6600 3150 6600
+Wire Wire Line
+	2900 6000 3050 6000
+Connection ~ 2900 6600
+Wire Wire Line
+	2900 7050 2900 7250
+Wire Wire Line
+	2450 5800 2450 6450
+Connection ~ 2450 5800
+$Comp
+L power:GND #PWR06
+U 1 1 5ABFE924
+P 2450 7250
+F 0 "#PWR06" H 2450 7000 50  0001 C CNN
+F 1 "GND" H 2450 7100 50  0000 C CNN
+F 2 "" H 2450 7250 50  0001 C CNN
+F 3 "" H 2450 7250 50  0001 C CNN
+	1    2450 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6750 2450 7250
+$Comp
+L jcf-digital:ADS1115 U3
+U 1 1 5ABFFFA2
+P 6650 4200
+F 0 "U3" H 6300 4500 60  0000 L CNN
+F 1 "ADS1115" H 6900 4500 60  0000 C CNN
+F 2 "Tinkerforge:VSSOP10" H 6650 4200 60  0001 C CNN
+F 3 "" H 6650 4200 60  0000 C CNN
+	1    6650 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4050 7650 4050
+$Comp
+L power:GND #PWR07
+U 1 1 5AC001A4
+P 6650 4850
+F 0 "#PWR07" H 6650 4600 50  0001 C CNN
+F 1 "GND" H 6650 4700 50  0000 C CNN
+F 2 "" H 6650 4850 50  0001 C CNN
+F 3 "" H 6650 4850 50  0001 C CNN
+	1    6650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4600 6650 4850
+$Comp
+L power:+3.3V #PWR08
+U 1 1 5AC0021E
+P 6650 3450
+F 0 "#PWR08" H 6650 3300 50  0001 C CNN
+F 1 "+3.3V" H 6650 3590 50  0000 C CNN
+F 2 "" H 6650 3450 50  0001 C CNN
+F 3 "" H 6650 3450 50  0001 C CNN
+	1    6650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5AC00246
+P 5950 3650
+F 0 "#PWR09" H 5950 3400 50  0001 C CNN
+F 1 "GND" H 5950 3500 50  0000 C CNN
+F 2 "" H 5950 3650 50  0001 C CNN
+F 3 "" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:C C3
+U 1 1 5AC0026E
+P 6400 3600
+F 0 "C3" H 6425 3700 50  0000 L CNN
+F 1 "1uF" H 6425 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6438 3450 50  0001 C CNN
+F 3 "" H 6400 3600 50  0001 C CNN
+	1    6400 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3450 6650 3600
+Wire Wire Line
+	6650 3600 6550 3600
+Connection ~ 6650 3600
+Wire Wire Line
+	6250 3600 5950 3600
+Wire Wire Line
+	5950 3600 5950 3650
+$Comp
+L camera_trigger-rescue:LDR03 R8
+U 1 1 5AC00629
+P 6250 5950
+F 0 "R8" V 6050 5950 50  0000 C CNN
+F 1 "LDR03" V 6325 5950 50  0000 C TNN
+F 2 "Opto-Devices:Resistor_LDR_4.9x4.2_RM2.54" V 6425 5950 50  0001 C CNN
+F 3 "" H 6250 5900 50  0001 C CNN
+	1    6250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5AC00670
+P 6250 5600
+F 0 "#PWR010" H 6250 5450 50  0001 C CNN
+F 1 "+3.3V" H 6250 5740 50  0000 C CNN
+F 2 "" H 6250 5600 50  0001 C CNN
+F 3 "" H 6250 5600 50  0001 C CNN
+	1    6250 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5AC006C3
+P 6250 6700
+F 0 "#PWR011" H 6250 6450 50  0001 C CNN
+F 1 "GND" H 6250 6550 50  0000 C CNN
+F 2 "" H 6250 6700 50  0001 C CNN
+F 3 "" H 6250 6700 50  0001 C CNN
+	1    6250 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:R R9
+U 1 1 5AC006EF
+P 6250 6450
+F 0 "R9" V 6330 6450 50  0000 C CNN
+F 1 "R" V 6250 6450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6180 6450 50  0001 C CNN
+F 3 "" H 6250 6450 50  0001 C CNN
+	1    6250 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6700 6250 6600
+Wire Wire Line
+	6250 5800 6250 5600
+Wire Wire Line
+	6250 6100 6250 6200
+Wire Wire Line
+	6250 6200 6800 6200
+Connection ~ 6250 6200
+Wire Wire Line
+	7150 4150 7650 4150
+Text GLabel 5200 3250 2    60   Input ~ 0
+SDA
+Text GLabel 5200 3150 2    60   Input ~ 0
+SCL
+Wire Wire Line
+	4500 3250 5050 3250
+Wire Wire Line
+	10100 2200 10100 2350
+$Comp
+L power:GND #PWR012
+U 1 1 5AC2489E
+P 10400 2350
+F 0 "#PWR012" H 10400 2100 50  0001 C CNN
+F 1 "GND" H 10400 2200 50  0000 C CNN
+F 2 "" H 10400 2350 50  0001 C CNN
+F 3 "" H 10400 2350 50  0001 C CNN
+	1    10400 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 2350 10250 2350
+Connection ~ 10100 2350
+Wire Wire Line
+	8650 2600 9700 2600
+Wire Wire Line
+	8650 1650 10100 1650
+Wire Wire Line
+	10100 1650 10100 1800
+Wire Wire Line
+	9500 2000 9800 2000
+Wire Wire Line
+	9700 2700 9700 3100
+Wire Wire Line
+	9700 3100 9950 3100
+Wire Wire Line
+	9950 3500 10250 3500
+Wire Wire Line
+	10250 3500 10250 2350
+Connection ~ 10250 2350
+$Comp
+L camera_trigger-rescue:R R14
+U 1 1 5AC24B01
+P 9250 3300
+F 0 "R14" V 9330 3300 50  0000 C CNN
+F 1 "1k" V 9250 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9180 3300 50  0001 C CNN
+F 3 "" H 9250 3300 50  0001 C CNN
+	1    9250 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L camera_trigger-rescue:R R15
+U 1 1 5AC24B7E
+P 9350 2000
+F 0 "R15" V 9430 2000 50  0000 C CNN
+F 1 "1k" V 9350 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9280 2000 50  0001 C CNN
+F 3 "" H 9350 2000 50  0001 C CNN
+	1    9350 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 3300 9650 3300
+Wire Wire Line
+	8950 2000 9200 2000
+Wire Wire Line
+	8800 3300 9100 3300
+Wire Wire Line
+	8650 1650 8650 2600
+$Comp
+L camera_trigger-rescue:IR204A D1
+U 1 1 5AC269B5
+P 9650 4300
+F 0 "D1" H 9670 4370 50  0000 L CNN
+F 1 "IR204A" H 9610 4190 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 9650 4475 50  0001 C CNN
+F 3 "" H 9600 4300 50  0001 C CNN
+	1    9650 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L camera_trigger-rescue:R R16
+U 1 1 5AC26F88
+P 9650 4750
+F 0 "R16" V 9730 4750 50  0000 C CNN
+F 1 "27" V 9650 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9580 4750 50  0001 C CNN
+F 3 "" H 9650 4750 50  0001 C CNN
+	1    9650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4500 9650 4600
+Wire Wire Line
+	9650 4900 9650 5000
+$Comp
+L power:GND #PWR013
+U 1 1 5AC2708C
+P 9650 5700
+F 0 "#PWR013" H 9650 5450 50  0001 C CNN
+F 1 "GND" H 9650 5550 50  0000 C CNN
+F 2 "" H 9650 5700 50  0001 C CNN
+F 3 "" H 9650 5700 50  0001 C CNN
+	1    9650 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5400 9650 5700
+$Comp
+L camera_trigger-rescue:R R13
+U 1 1 5AC2714D
+P 9100 5200
+F 0 "R13" V 9180 5200 50  0000 C CNN
+F 1 "1k" V 9100 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9030 5200 50  0001 C CNN
+F 3 "" H 9100 5200 50  0001 C CNN
+	1    9100 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 5200 9350 5200
+Wire Wire Line
+	8600 5200 8950 5200
+Wire Wire Line
+	4500 2950 5200 2950
+Wire Wire Line
+	4500 2650 5200 2650
+Wire Wire Line
+	7150 4250 7600 4250
+Wire Wire Line
+	4500 3150 4900 3150
+Text GLabel 1300 1850 0    60   Input ~ 0
+SCL
+Text GLabel 1300 2400 0    60   Input ~ 0
+SDA
+$Comp
+L camera_trigger-rescue:R R2
+U 1 1 5AC28264
+P 1650 1850
+F 0 "R2" V 1730 1850 50  0000 C CNN
+F 1 "R" V 1650 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1580 1850 50  0001 C CNN
+F 3 "" H 1650 1850 50  0001 C CNN
+	1    1650 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L camera_trigger-rescue:R R3
+U 1 1 5AC282DB
+P 1650 2400
+F 0 "R3" V 1730 2400 50  0000 C CNN
+F 1 "R" V 1650 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1580 2400 50  0001 C CNN
+F 3 "" H 1650 2400 50  0001 C CNN
+	1    1650 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR014
+U 1 1 5AC28384
+P 2100 2400
+F 0 "#PWR014" H 2100 2250 50  0001 C CNN
+F 1 "+3.3V" H 2100 2540 50  0000 C CNN
+F 2 "" H 2100 2400 50  0001 C CNN
+F 3 "" H 2100 2400 50  0001 C CNN
+	1    2100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2400 1300 2400
+Wire Wire Line
+	1300 1850 1500 1850
+$Comp
+L power:+3.3V #PWR015
+U 1 1 5AC2AEDB
+P 9650 4000
+F 0 "#PWR015" H 9650 3850 50  0001 C CNN
+F 1 "+3.3V" H 9650 4140 50  0000 C CNN
+F 2 "" H 9650 4000 50  0001 C CNN
+F 3 "" H 9650 4000 50  0001 C CNN
+	1    9650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4000 9650 4200
+Text GLabel 5200 3050 2    60   Input ~ 0
+TRIG
+Wire Wire Line
+	5200 3050 4500 3050
+Text GLabel 8950 2000 0    60   Input ~ 0
+TRIG
+Text GLabel 5200 2950 2    60   Input ~ 0
+FOCUS
+Text GLabel 8800 3300 0    60   Input ~ 0
+FOCUS
+Text GLabel 5200 2650 2    60   Input ~ 0
+IR_LED
+Text GLabel 8600 5200 0    60   Input ~ 0
+IR_LED
+Text GLabel 4800 5900 2    60   Input ~ 0
+AUD_IN
+Text GLabel 7650 4050 2    60   Input ~ 0
+AUD_IN
+Text GLabel 6800 6200 2    60   Input ~ 0
+LDR_IN
+Text GLabel 7650 4150 2    60   Input ~ 0
+LDR_IN
+Text GLabel 8150 4250 2    60   Input ~ 0
+BAT
+$Comp
+L camera_trigger-rescue:Conn_01x06_Female J1
+U 1 1 5AC2C408
+P 1200 3550
+F 0 "J1" H 1200 3850 50  0000 C CNN
+F 1 "LIDAR" H 1200 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 1200 3550 50  0001 C CNN
+F 3 "" H 1200 3550 50  0001 C CNN
+	1    1200 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5AC2C51D
+P 1950 3250
+F 0 "#PWR016" H 1950 3000 50  0001 C CNN
+F 1 "GND" H 1950 3100 50  0000 C CNN
+F 2 "" H 1950 3250 50  0001 C CNN
+F 3 "" H 1950 3250 50  0001 C CNN
+	1    1950 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5AC2C563
+P 1950 3750
+F 0 "#PWR017" H 1950 3600 50  0001 C CNN
+F 1 "+5V" H 1950 3890 50  0000 C CNN
+F 2 "" H 1950 3750 50  0001 C CNN
+F 3 "" H 1950 3750 50  0001 C CNN
+	1    1950 3750
+	0    1    1    0   
+$EndComp
+Text GLabel 1950 3350 2    60   Input ~ 0
+SDA
+Text GLabel 1950 3450 2    60   Input ~ 0
+SCL
+Wire Wire Line
+	1950 3450 1400 3450
+Wire Wire Line
+	1400 3350 1950 3350
+Wire Wire Line
+	1400 3250 1750 3250
+Wire Wire Line
+	1400 3750 1750 3750
+$Comp
+L camera_trigger-rescue:CP C2
+U 1 1 5AC2C89F
+P 2600 3450
+F 0 "C2" H 2625 3550 50  0000 L CNN
+F 1 "680uF" H 2625 3350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D12.5mm_P5.00mm" H 2638 3300 50  0001 C CNN
+F 3 "" H 2600 3450 50  0001 C CNN
+	1    2600 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3600 2600 4000
+Wire Wire Line
+	2600 4000 1750 4000
+Wire Wire Line
+	1750 4000 1750 3750
+Connection ~ 1750 3750
+Wire Wire Line
+	2600 3300 2600 2950
+Wire Wire Line
+	2600 2950 1750 2950
+Wire Wire Line
+	1750 2950 1750 3250
+Connection ~ 1750 3250
+NoConn ~ 1400 3550
+NoConn ~ 1400 3650
+$Comp
+L camera_trigger-rescue:Conn_01x04_Female J4
+U 1 1 5AC2CBC0
+P 3950 4650
+F 0 "J4" H 3950 4850 50  0000 C CNN
+F 1 "Display" H 3950 4350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3950 4650 50  0001 C CNN
+F 3 "" H 3950 4650 50  0001 C CNN
+	1    3950 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5AC2CCF1
+P 4500 4650
+F 0 "#PWR018" H 4500 4500 50  0001 C CNN
+F 1 "+5V" H 4500 4790 50  0000 C CNN
+F 2 "" H 4500 4650 50  0001 C CNN
+F 3 "" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5AC2CD3B
+P 4500 4750
+F 0 "#PWR019" H 4500 4500 50  0001 C CNN
+F 1 "GND" H 4500 4600 50  0000 C CNN
+F 2 "" H 4500 4750 50  0001 C CNN
+F 3 "" H 4500 4750 50  0001 C CNN
+	1    4500 4750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4500 4450 2    60   Input ~ 0
+SDA
+Text GLabel 4500 4550 2    60   Input ~ 0
+SCL
+Wire Wire Line
+	4500 4550 4150 4550
+Wire Wire Line
+	4150 4450 4500 4450
+Wire Wire Line
+	4150 4650 4500 4650
+Wire Wire Line
+	4500 4750 4150 4750
+Text GLabel 5750 4050 0    60   Input ~ 0
+SDA
+Text GLabel 5750 4150 0    60   Input ~ 0
+SCL
+Wire Wire Line
+	5750 4150 6150 4150
+Wire Wire Line
+	5750 4050 6150 4050
+NoConn ~ 7150 4350
+$Comp
+L power:GND #PWR020
+U 1 1 5AC30AF8
+P 5200 3550
+F 0 "#PWR020" H 5200 3300 50  0001 C CNN
+F 1 "GND" H 5200 3400 50  0000 C CNN
+F 2 "" H 5200 3550 50  0001 C CNN
+F 3 "" H 5200 3550 50  0001 C CNN
+	1    5200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR021
+U 1 1 5AC30B42
+P 4900 3650
+F 0 "#PWR021" H 4900 3500 50  0001 C CNN
+F 1 "+3.3V" H 4900 3790 50  0000 C CNN
+F 2 "" H 4900 3650 50  0001 C CNN
+F 3 "" H 4900 3650 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3650 4900 3650
+Wire Wire Line
+	4500 3550 4700 3550
+Text GLabel 5200 2550 2    60   Input ~ 0
+AUD_OUT
+Wire Wire Line
+	5200 2550 4500 2550
+$Comp
+L camera_trigger-rescue:Buzzer BZ1
+U 1 1 5AC3BAC8
+P 8000 900
+F 0 "BZ1" H 8150 950 50  0000 L CNN
+F 1 "Buzzer" H 8150 850 50  0000 L CNN
+F 2 "Buzzers_Beepers:BUZZER" V 7975 1000 50  0001 C CNN
+F 3 "" V 7975 1000 50  0001 C CNN
+	1    8000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5AC3BB9E
+P 7900 2000
+F 0 "#PWR022" H 7900 1750 50  0001 C CNN
+F 1 "GND" H 7900 1850 50  0000 C CNN
+F 2 "" H 7900 2000 50  0001 C CNN
+F 3 "" H 7900 2000 50  0001 C CNN
+	1    7900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1350 7900 1550
+$Comp
+L power:+5V #PWR023
+U 1 1 5AC3BCF5
+P 7900 650
+F 0 "#PWR023" H 7900 500 50  0001 C CNN
+F 1 "+5V" H 7900 790 50  0000 C CNN
+F 2 "" H 7900 650 50  0001 C CNN
+F 3 "" H 7900 650 50  0001 C CNN
+	1    7900 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 650  7900 800 
+$Comp
+L camera_trigger-rescue:R R10
+U 1 1 5AC3BDCA
+P 7250 1750
+F 0 "R10" V 7330 1750 50  0000 C CNN
+F 1 "1k" V 7250 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7180 1750 50  0001 C CNN
+F 3 "" H 7250 1750 50  0001 C CNN
+	1    7250 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 1750 7600 1750
+Text GLabel 6850 1750 0    60   Input ~ 0
+AUD_OUT
+Wire Wire Line
+	6850 1750 7100 1750
+$Comp
+L camera_trigger-rescue:R R7
+U 1 1 5AC3CC39
+P 5700 4550
+F 0 "R7" V 5780 4550 50  0000 C CNN
+F 1 "10k" V 5700 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5630 4550 50  0001 C CNN
+F 3 "" H 5700 4550 50  0001 C CNN
+	1    5700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4250 5700 4250
+Wire Wire Line
+	5700 4250 5700 4400
+$Comp
+L power:GND #PWR024
+U 1 1 5AC3CD32
+P 5700 4850
+F 0 "#PWR024" H 5700 4600 50  0001 C CNN
+F 1 "GND" H 5700 4700 50  0000 C CNN
+F 2 "" H 5700 4850 50  0001 C CNN
+F 3 "" H 5700 4850 50  0001 C CNN
+	1    5700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4700 5700 4850
+NoConn ~ 6150 4350
+NoConn ~ 4500 3350
+NoConn ~ 4500 3450
+NoConn ~ 3600 2250
+NoConn ~ 3600 3350
+NoConn ~ 3600 3450
+NoConn ~ 3600 3050
+NoConn ~ 3600 2550
+NoConn ~ 3600 2650
+NoConn ~ 3600 2750
+NoConn ~ 3600 2850
+NoConn ~ 3600 2950
+NoConn ~ 4500 2850
+NoConn ~ 4500 2750
+$Comp
+L camera_trigger-rescue:Conn_01x08_Male J3
+U 1 1 5AC3D4AF
+P 3450 1200
+F 0 "J3" H 3450 1600 50  0000 C CNN
+F 1 "PowerBoost 1000C" H 3450 700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3450 1200 50  0001 C CNN
+F 3 "" H 3450 1200 50  0001 C CNN
+	1    3450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR025
+U 1 1 5AC3D770
+P 4100 900
+F 0 "#PWR025" H 4100 750 50  0001 C CNN
+F 1 "+5V" H 4100 1040 50  0000 C CNN
+F 2 "" H 4100 900 50  0001 C CNN
+F 3 "" H 4100 900 50  0001 C CNN
+	1    4100 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 900  4100 900 
+$Comp
+L power:GND #PWR026
+U 1 1 5AC3D8C1
+P 4100 1000
+F 0 "#PWR026" H 4100 750 50  0001 C CNN
+F 1 "GND" H 4100 850 50  0000 C CNN
+F 2 "" H 4100 1000 50  0001 C CNN
+F 3 "" H 4100 1000 50  0001 C CNN
+	1    4100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1000 3950 1000
+Wire Wire Line
+	3650 1200 3950 1200
+Wire Wire Line
+	3950 1200 3950 1000
+Connection ~ 3950 1000
+Text GLabel 4100 1500 2    60   Input ~ 0
+BAT
+Wire Wire Line
+	3650 1500 4100 1500
+NoConn ~ 3650 1100
+NoConn ~ 3650 1300
+NoConn ~ 3650 1400
+NoConn ~ 3650 1600
+$Comp
+L camera_trigger-rescue:R R11
+U 1 1 5AC3DDF8
+P 7600 4550
+F 0 "R11" V 7680 4550 50  0000 C CNN
+F 1 "20k" V 7600 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7530 4550 50  0001 C CNN
+F 3 "" H 7600 4550 50  0001 C CNN
+	1    7600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:R R12
+U 1 1 5AC3DE93
+P 7800 4250
+F 0 "R12" V 7880 4250 50  0000 C CNN
+F 1 "10k" V 7800 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7730 4250 50  0001 C CNN
+F 3 "" H 7800 4250 50  0001 C CNN
+	1    7800 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4250 7950 4250
+Wire Wire Line
+	7600 4400 7600 4250
+Connection ~ 7600 4250
+$Comp
+L power:GND #PWR027
+U 1 1 5AC3E212
+P 7600 4850
+F 0 "#PWR027" H 7600 4600 50  0001 C CNN
+F 1 "GND" H 7600 4700 50  0000 C CNN
+F 2 "" H 7600 4850 50  0001 C CNN
+F 3 "" H 7600 4850 50  0001 C CNN
+	1    7600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4700 7600 4850
+$Comp
+L power:PWR_FLAG #FLG028
+U 1 1 5AC3E707
+P 4350 900
+F 0 "#FLG028" H 4350 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 1050 50  0000 C CNN
+F 2 "" H 4350 900 50  0001 C CNN
+F 3 "" H 4350 900 50  0001 C CNN
+	1    4350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG029
+U 1 1 5AC3E761
+P 4350 1000
+F 0 "#FLG029" H 4350 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 1150 50  0000 C CNN
+F 2 "" H 4350 1000 50  0001 C CNN
+F 3 "" H 4350 1000 50  0001 C CNN
+	1    4350 1000
+	-1   0    0    1   
+$EndComp
+Connection ~ 4100 900 
+Connection ~ 4100 1000
+$Comp
+L power:+5V #PWR030
+U 1 1 5AC3ECD0
+P 3100 3650
+F 0 "#PWR030" H 3100 3500 50  0001 C CNN
+F 1 "+5V" H 3100 3790 50  0000 C CNN
+F 2 "" H 3100 3650 50  0001 C CNN
+F 3 "" H 3100 3650 50  0001 C CNN
+	1    3100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3650 3100 3650
+$Comp
+L power:GND #PWR031
+U 1 1 5AC3EDC6
+P 3300 3550
+F 0 "#PWR031" H 3300 3300 50  0001 C CNN
+F 1 "GND" H 3300 3400 50  0000 C CNN
+F 2 "" H 3300 3550 50  0001 C CNN
+F 3 "" H 3300 3550 50  0001 C CNN
+	1    3300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3550 3400 3550
+Wire Wire Line
+	3400 3550 3400 3150
+Wire Wire Line
+	3400 3150 3600 3150
+Connection ~ 3400 3550
+NoConn ~ 3600 3250
+$Comp
+L power:+3.3V #PWR032
+U 1 1 5AC3F8E3
+P 2100 1850
+F 0 "#PWR032" H 2100 1700 50  0001 C CNN
+F 1 "+3.3V" H 2100 1990 50  0000 C CNN
+F 2 "" H 2100 1850 50  0001 C CNN
+F 3 "" H 2100 1850 50  0001 C CNN
+	1    2100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1850 1800 1850
+Wire Wire Line
+	1800 2400 2100 2400
+$Comp
+L power:PWR_FLAG #FLG033
+U 1 1 5AC3FB65
+P 2850 5200
+F 0 "#FLG033" H 2850 5275 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 5350 50  0000 C CNN
+F 2 "" H 2850 5200 50  0001 C CNN
+F 3 "" H 2850 5200 50  0001 C CNN
+	1    2850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5200 3250 5200
+Connection ~ 3250 5200
+Wire Wire Line
+	7900 2000 7900 1950
+$Comp
+L camera_trigger-rescue:R R17
+U 1 1 5AC403F9
+P 7900 1200
+F 0 "R17" V 7980 1200 50  0000 C CNN
+F 1 "100" V 7900 1200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7830 1200 50  0001 C CNN
+F 3 "" H 7900 1200 50  0001 C CNN
+	1    7900 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1050 7900 1000
+Text GLabel 4850 2250 2    60   Input ~ 0
+ROTARY_NEXT
+Text GLabel 4850 2350 2    60   Input ~ 0
+ROTARY_PREV
+Text GLabel 4850 2450 2    60   Input ~ 0
+ROTARY_CLICK
+Wire Wire Line
+	4500 2450 4850 2450
+Wire Wire Line
+	4500 2350 4850 2350
+Wire Wire Line
+	4500 2250 4850 2250
+Text GLabel 6100 900  2    60   Input ~ 0
+ROTARY_NEXT
+Text GLabel 6100 1000 2    60   Input ~ 0
+ROTARY_PREV
+Text GLabel 6100 1100 2    60   Input ~ 0
+ROTARY_CLICK
+Wire Wire Line
+	5800 900  6100 900 
+Wire Wire Line
+	5800 1000 6100 1000
+Wire Wire Line
+	5800 1100 6100 1100
+$Comp
+L camera_trigger-rescue:Conn_01x04_Female J2
+U 1 1 5ACB077D
+P 5600 1100
+F 0 "J2" H 5600 1300 50  0000 C CNN
+F 1 "Rotary switch" H 5600 800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5600 1100 50  0001 C CNN
+F 3 "" H 5600 1100 50  0001 C CNN
+	1    5600 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5ACB08A7
+P 6100 1200
+F 0 "#PWR034" H 6100 950 50  0001 C CNN
+F 1 "GND" H 6100 1050 50  0000 C CNN
+F 2 "" H 6100 1200 50  0001 C CNN
+F 3 "" H 6100 1200 50  0001 C CNN
+	1    6100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1200 5800 1200
+$Comp
+L camera_trigger-rescue:TEST TP3
+U 1 1 5ACCFCED
+P 4900 3150
+F 0 "TP3" H 4900 3450 50  0000 C BNN
+F 1 "TEST" H 4900 3400 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 4900 3150 50  0001 C CNN
+F 3 "" H 4900 3150 50  0001 C CNN
+	1    4900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:TEST TP4
+U 1 1 5ACCFEA8
+P 5050 3250
+F 0 "TP4" H 5050 3550 50  0000 C BNN
+F 1 "TEST" H 5050 3500 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5050 3250 50  0001 C CNN
+F 3 "" H 5050 3250 50  0001 C CNN
+	1    5050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:TEST TP2
+U 1 1 5ACCFF51
+P 4700 3550
+F 0 "TP2" H 4700 3850 50  0000 C BNN
+F 1 "TEST" H 4700 3800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 4700 3550 50  0001 C CNN
+F 3 "" H 4700 3550 50  0001 C CNN
+	1    4700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera_trigger-rescue:TEST TP5
+U 1 1 5ACCFFCA
+P 5300 3550
+F 0 "TP5" H 5300 3850 50  0000 C BNN
+F 1 "TEST" H 5300 3800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5300 3550 50  0001 C CNN
+F 3 "" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 3550
+$Comp
+L camera_trigger-rescue:TEST TP1
+U 1 1 5ACD02E2
+P 2950 3650
+F 0 "TP1" H 2950 3950 50  0000 C BNN
+F 1 "TEST" H 2950 3900 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2950 3650 50  0001 C CNN
+F 3 "" H 2950 3650 50  0001 C CNN
+	1    2950 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 3650
+Wire Wire Line
+	3950 5900 4800 5900
+Wire Wire Line
+	2900 6600 2900 6750
+Wire Wire Line
+	2450 5800 3050 5800
+Wire Wire Line
+	6650 3600 6650 3800
+Wire Wire Line
+	6250 6200 6250 6300
+Wire Wire Line
+	10100 2350 10100 2500
+Wire Wire Line
+	10250 2350 10100 2350
+Wire Wire Line
+	1750 3750 1950 3750
+Wire Wire Line
+	1750 3250 1950 3250
+Wire Wire Line
+	3950 1000 4100 1000
+Wire Wire Line
+	7600 4250 7650 4250
+Wire Wire Line
+	4100 900  4350 900 
+Wire Wire Line
+	4100 1000 4350 1000
+Wire Wire Line
+	3400 3550 3600 3550
+Wire Wire Line
+	3250 5200 3250 5600
+Wire Wire Line
+	5200 3550 5300 3550
+Wire Wire Line
+	3100 3650 3600 3650
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 5B5F3B1E
+P 9550 5200
+F 0 "Q2" H 9741 5246 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 9741 5155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9750 5300 50  0001 C CNN
+F 3 "~" H 9550 5200 50  0001 C CNN
+	1    9550 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q3
+U 1 1 5B5F3EEA
+P 9850 3300
+F 0 "Q3" H 10041 3346 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 10041 3255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10050 3400 50  0001 C CNN
+F 3 "~" H 9850 3300 50  0001 C CNN
+	1    9850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q4
+U 1 1 5B5F407A
+P 10000 2000
+F 0 "Q4" H 10191 2046 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 10191 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10200 2100 50  0001 C CNN
+F 3 "~" H 10000 2000 50  0001 C CNN
+	1    10000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 5B5F4330
+P 7800 1750
+F 0 "Q1" H 7991 1796 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 7991 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8000 1850 50  0001 C CNN
+F 3 "~" H 7800 1750 50  0001 C CNN
+	1    7800 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 3250
+Wire Wire Line
+	5050 3250 5200 3250
+Connection ~ 4900 3150
+Wire Wire Line
+	4900 3150 5200 3150
+Connection ~ 4700 3550
+Wire Wire Line
+	4700 3550 5200 3550
+$EndSCHEMATC

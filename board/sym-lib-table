@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name camera_trigger-rescue)(type Legacy)(uri ${KIPRJMOD}/camera_trigger-rescue.lib)(options "")(descr ""))
+  (lib (name jcf-digital)(type Legacy)(uri /home/vadim/kicad/components/frenchie/library/jcf-digital.lib)(options "")(descr ""))
+  (lib (name jcf-analog)(type Legacy)(uri /home/vadim/kicad/components/frenchie/library/jcf-analog.lib)(options "")(descr ""))
+)
